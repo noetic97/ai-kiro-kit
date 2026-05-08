@@ -11,7 +11,7 @@ inclusion: always
 
 ## Current Focus
 
-Step 3 complete — 16 skills synced from ai-dev-kit, CC-specific path references patched. Next: Step 4 (translate three core agents to Kiro JSON format).
+Step 4 complete — three agents translated to Kiro JSON format (`adversarial-reviewer`, `diff-explorer`, `security-auditor`). Next: Step 5 (port hooks and wire into agent configs).
 
 ---
 
@@ -35,7 +35,7 @@ Step 3 complete — 16 skills synced from ai-dev-kit, CC-specific path reference
 
 ## Next Up
 
-Step 4 — translate `adversarial-reviewer`, `diff-explorer`, `security-auditor` agents to Kiro JSON format (`agents/*.json`)
+Step 5 — port `post-write-test.sh` and `session-end-reminder.sh` hooks, document opt-in wiring for agent configs
 
 ---
 

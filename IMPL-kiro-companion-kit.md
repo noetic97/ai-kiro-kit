@@ -75,7 +75,7 @@ At the end of every step:
 | 1    | Create repo skeleton and README                     | complete | main                  | —   |
 | 2    | Author initial steering files                       | complete | feat/initial-steering | #1  |
 | 3    | Import skills from ai-dev-kit via sync-skills.ts    | complete | feat/sync-skills      | #2  |
-| 4    | Translate three core agents to Kiro JSON format     | pending | —      | —   |
+| 4    | Translate three core agents to Kiro JSON format     | complete | feat/core-agents | —   |
 | 5    | Port hooks and wire into agent configs              | pending | —      | —   |
 | 6    | Write install-global.ts and init.ts                 | pending | —      | —   |
 | 7    | Integrate with native Kiro specs workflow           | pending | —      | —   |
@@ -207,7 +207,7 @@ The `.skill-source` file is the poor-man's version of a dependency lockfile. Whe
 ## Step 4 — Translate three core agents to Kiro JSON format
 
 **Branch:** `feat/core-agents`
-**Status:** `pending`
+**Status:** `complete`
 **Scope:** new JSON files
 
 ### What to do
@@ -244,10 +244,10 @@ Translate ai-dev-kit's three markdown agents to Kiro JSON configs. Each goes in 
 
 ### Acceptance criteria
 
-- [ ] Three agent JSON files exist and are valid JSON
-- [ ] Each has correct tool scoping (read-only for all three)
-- [ ] Prompt bodies match their ai-dev-kit markdown counterparts
-- [ ] Resources include steering and skills globs
+- [x] Three agent JSON files exist and are valid JSON
+- [x] Each has correct tool scoping (read-only for all three — `["read", "shell"]`, no write)
+- [x] Prompt bodies match their ai-dev-kit markdown counterparts
+- [x] Resources include steering and skills globs
 
 ### Notes
 
