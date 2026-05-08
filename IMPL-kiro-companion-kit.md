@@ -77,7 +77,7 @@ At the end of every step:
 | 3    | Import skills from ai-dev-kit via sync-skills.ts    | complete | feat/sync-skills      | #2  |
 | 4    | Translate three core agents to Kiro JSON format     | complete | feat/core-agents | #3  |
 | 5    | Port hooks and wire into agent configs              | complete | feat/hooks       | —   |
-| 6    | Write install-global.ts and init.ts                 | pending | —      | —   |
+| 6    | Write install-global.ts and init.ts                 | complete | feat/deploy-scripts | —   |
 | 7    | Integrate with native Kiro specs workflow           | pending | —      | —   |
 | 8    | Validate end-to-end on a real work project          | pending | —      | —   |
 

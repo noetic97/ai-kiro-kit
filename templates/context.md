@@ -11,7 +11,7 @@ inclusion: always
 
 ## Current Focus
 
-Step 6 complete — `install-global.ts` and `init.ts` written and tested. Both scripts deploy to `~/.kiro/` and `.kiro/` respectively, with never-overwrite semantics and checksum tracking. Four template files added to `templates/`. Next: Step 7 (integrate with native Kiro specs workflow).
+<!-- TODO: What are you actively working on right now? -->
 
 ---
 
@@ -35,7 +35,7 @@ Step 6 complete — `install-global.ts` and `init.ts` written and tested. Both s
 
 ## Next Up
 
-Step 7 — update `new-feature` skill to document Kiro's native spec workflow as the preferred path; update README with when-to-use guidance
+<!-- What comes after the current focus? -->
 
 ---
 
