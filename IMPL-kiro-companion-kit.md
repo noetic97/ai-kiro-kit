@@ -78,7 +78,7 @@ At the end of every step:
 | 4    | Translate three core agents to Kiro JSON format     | complete | feat/core-agents | #3  |
 | 5    | Port hooks and wire into agent configs              | complete | feat/hooks       | —   |
 | 6    | Write install-global.ts and init.ts                 | complete | feat/deploy-scripts | —   |
-| 7    | Integrate with native Kiro specs workflow           | pending | —      | —   |
+| 7    | Integrate with native Kiro specs workflow           | complete | feat/specs-integration | —   |
 | 8    | Validate end-to-end on a real work project          | pending | —      | —   |
 
 ---

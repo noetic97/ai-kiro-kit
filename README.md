@@ -54,8 +54,8 @@ This deploys to `~/.kiro/` — Kiro picks these up automatically.
 ### Scaffold a new project
 
 ```bash
-cd /path/to/your/project
-bun run init --kit /path/to/ai-kiro-kit
+cd /path/to/ai-kiro-kit
+bun run init /path/to/your/project
 ```
 
 This creates `.kiro/` in your project with:
@@ -72,6 +72,21 @@ If you have a local clone of ai-dev-kit and want to pull in updated skills:
 ```bash
 bun run sync-skills --source /path/to/ai-dev-kit
 ```
+
+---
+
+## `/new-feature` skill vs Kiro's native specs
+
+Kiro has a first-class spec workflow: describe a feature in natural language → requirements in EARS notation → design doc → implementation task list. The `/new-feature` skill does something similar but outside the IDE spec system.
+
+| Use case | Recommended approach |
+|---|---|
+| IDE feature work with team-shared spec artifacts | Kiro's native spec workflow |
+| CLI-only work (no Kiro IDE open) | `/new-feature` skill |
+| Quick features where full spec overhead is overkill | `/new-feature` skill |
+| Work that may move to a non-Kiro tool later | `/new-feature` skill |
+
+The skill is not removed — it works as a CLI fallback. The `SKILL.md` surfaces this guidance so the model routes correctly when invoked.
 
 ---
 
