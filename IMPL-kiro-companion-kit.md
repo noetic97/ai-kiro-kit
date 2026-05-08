@@ -74,7 +74,7 @@ At the end of every step:
 | ---- | --------------------------------------------------- | -------- | --------------------- | --- |
 | 1    | Create repo skeleton and README                     | complete | main                  | —   |
 | 2    | Author initial steering files                       | complete | feat/initial-steering | #1  |
-| 3    | Import skills from ai-dev-kit via sync-skills.ts    | complete | feat/sync-skills      | —   |
+| 3    | Import skills from ai-dev-kit via sync-skills.ts    | complete | feat/sync-skills      | #2  |
 | 4    | Translate three core agents to Kiro JSON format     | pending | —      | —   |
 | 5    | Port hooks and wire into agent configs              | pending | —      | —   |
 | 6    | Write install-global.ts and init.ts                 | pending | —      | —   |
