@@ -8,6 +8,22 @@ allowed-tools: Read, Write, Edit, Bash, Grep, Glob
 
 Spec-driven feature implementation. Start from desired behavior, not code structure.
 
+## Recommended: use Kiro's native spec workflow
+
+For new features in the IDE, prefer Kiro's built-in spec generation over this skill:
+
+1. Describe the feature in natural language
+2. Let Kiro generate requirements in EARS notation
+3. Refine requirements before design
+4. Kiro generates a design doc with data flows and interfaces
+5. Kiro creates a task list you can execute
+
+Use this skill instead when you want a lightweight spec without IDE spec generation —
+for example, working from the CLI, quick features where full spec overhead is overkill,
+or when the work will later move to a non-Kiro tool.
+
+---
+
 ## Instructions
 
 This command works in two phases: **Discover** then **Build**. Do not write any code until
