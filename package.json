@@ -1,0 +1,9 @@
+{
+  "name": "ai-kiro-kit",
+  "version": "0.0.1",
+  "scripts": {
+    "install-global": "bun scripts/install-global.ts",
+    "init": "bun scripts/init.ts",
+    "sync-skills": "bun scripts/sync-skills.ts"
+  }
+}
