@@ -11,7 +11,7 @@ inclusion: always
 
 ## Current Focus
 
-Step 4 complete — three agents translated to Kiro JSON format (`adversarial-reviewer`, `diff-explorer`, `security-auditor`). Next: Step 5 (port hooks and wire into agent configs).
+Step 6 complete — `install-global.ts` and `init.ts` written and tested. Both scripts deploy to `~/.kiro/` and `.kiro/` respectively, with never-overwrite semantics and checksum tracking. Four template files added to `templates/`. Next: Step 7 (integrate with native Kiro specs workflow).
 
 ---
 
@@ -35,7 +35,7 @@ Step 4 complete — three agents translated to Kiro JSON format (`adversarial-re
 
 ## Next Up
 
-Step 5 — port `post-write-test.sh` and `session-end-reminder.sh` hooks, document opt-in wiring for agent configs
+Step 7 — update `new-feature` skill to document Kiro's native spec workflow as the preferred path; update README with when-to-use guidance
 
 ---
 
