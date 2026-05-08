@@ -11,7 +11,7 @@ inclusion: always
 
 ## Current Focus
 
-Step 6 complete — `install-global.ts` and `init.ts` written and tested. Both scripts deploy to `~/.kiro/` and `.kiro/` respectively, with never-overwrite semantics and checksum tracking. Four template files added to `templates/`. Next: Step 7 (integrate with native Kiro specs workflow).
+Step 7 complete — `new-feature` skill updated to recommend Kiro's native spec workflow as the preferred IDE path; README updated with when-to-use guidance and init invocation fix. Next: Step 8 (validate end-to-end on a real work project).
 
 ---
 
@@ -35,7 +35,7 @@ Step 6 complete — `install-global.ts` and `init.ts` written and tested. Both s
 
 ## Next Up
 
-Step 7 — update `new-feature` skill to document Kiro's native spec workflow as the preferred path; update README with when-to-use guidance
+Step 8 — validate end-to-end on a real work project; document friction points in RESEARCH file
 
 ---
 
