@@ -70,11 +70,11 @@ At the end of every step:
 
 ## Steps
 
-| Step | Description                                         | Status  | Branch | PR  |
-| ---- | --------------------------------------------------- | ------- | ------ | --- |
-| 1    | Create repo skeleton and README                     | complete | main   | —   |
-| 2    | Author initial steering files                       | pending | —      | —   |
-| 3    | Import skills from ai-dev-kit via sync-skills.ts    | pending | —      | —   |
+| Step | Description                                         | Status   | Branch                | PR  |
+| ---- | --------------------------------------------------- | -------- | --------------------- | --- |
+| 1    | Create repo skeleton and README                     | complete | main                  | —   |
+| 2    | Author initial steering files                       | complete | feat/initial-steering | #1  |
+| 3    | Import skills from ai-dev-kit via sync-skills.ts    | complete | feat/sync-skills      | —   |
 | 4    | Translate three core agents to Kiro JSON format     | pending | —      | —   |
 | 5    | Port hooks and wire into agent configs              | pending | —      | —   |
 | 6    | Write install-global.ts and init.ts                 | pending | —      | —   |
@@ -127,61 +127,22 @@ At the end of every step:
 ## Step 2 — Author initial steering files
 
 **Branch:** `feat/initial-steering`
-**Status:** `pending`
+**Status:** `complete` — PR #1
 **Scope:** new markdown files
-
-### Problem
-
-Kiro splits what Claude Code puts in one `CLAUDE.md` into multiple focused steering files. Native Kiro convention is `product.md`, `structure.md`, `tech.md`. These are team-authored in real use, but for the kit we need sensible templates that make it obvious what each file is for.
-
-### What to do
-
-Create four steering files in `steering/`:
-
-**`product.md`** (inclusion: always)
-- Template for product vision, target users, core features
-- Placeholder sections the team fills in per project
-- Short examples of what good content looks like
-
-**`structure.md`** (inclusion: always)
-- Template for documenting directory layout
-- Prompts for: domain layers, I/O boundaries, shared utilities
-- Lean — the project determines the content
-
-**`tech.md`** (inclusion: always)
-- Stack, runtime, testing framework, linting
-- Paradigm preferences section (OOP vs FP — team-decided, not opinionated by default)
-- Key dependencies
-
-**`context.md`** (inclusion: always)
-- Living session context, direct port of ai-dev-kit's `CONTEXT.md`
-- Current focus, active decisions, in progress, known gotchas, next up, session notes
-- Frontmatter: `inclusion: always`
-
-Each file must start with:
-```
----
-inclusion: always
----
-```
-
-### Design principle
-
-Unlike ai-dev-kit's opinionated global CLAUDE.md (which enforces FP, named exports, etc.), these templates are **team-neutral**. They prompt the team to write their own conventions rather than imposing one developer's preferences.
 
 ### Acceptance criteria
 
-- [ ] Four steering files exist with correct frontmatter
-- [ ] Each is a template with clear placeholders, not filled-in content
-- [ ] `context.md` mirrors ai-dev-kit's structure for consistency
-- [ ] README references the steering directory as the place teams should customize first
+- [x] Four steering files exist with correct frontmatter
+- [x] Each is a template with clear placeholders, not filled-in content
+- [x] `context.md` mirrors ai-dev-kit's structure for consistency
+- [x] README references the steering directory as the place teams should customize first
 
 ---
 
 ## Step 3 — Import skills from ai-dev-kit via sync-skills.ts
 
 **Branch:** `feat/sync-skills`
-**Status:** `pending`
+**Status:** `complete`
 **Scope:** TypeScript script + initial skill import
 
 ### Problem
@@ -231,11 +192,11 @@ Skills are format-identical between Claude Code and Kiro, but we don't want to s
 
 ### Acceptance criteria
 
-- [ ] `sync-skills.ts` works against a local ai-dev-kit clone
-- [ ] Manifest-driven import is explicit and reproducible
-- [ ] All listed skills are imported and committed
-- [ ] Claude Code-specific file path references are updated
-- [ ] Each imported skill has a `.skill-source` file recording its origin SHA
+- [x] `sync-skills.ts` works against a local ai-dev-kit clone
+- [x] Manifest-driven import is explicit and reproducible
+- [x] All listed skills are imported and committed
+- [x] Claude Code-specific file path references are updated
+- [x] Each imported skill has a `.skill-source` file recording its origin SHA
 
 ### Notes
 

@@ -1,0 +1,21 @@
+{
+  "source": "~/code/ai-dev-kit",
+  "skills": [
+    "adr",
+    "adversarial-review",
+    "bug-hunter",
+    "changelog",
+    "code-review",
+    "commit",
+    "full-review",
+    "new-feature",
+    "new-module",
+    "new-phase",
+    "pr-description",
+    "research",
+    "review-fix",
+    "review-fix-auto",
+    "security-review",
+    "update-context"
+  ]
+}

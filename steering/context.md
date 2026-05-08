@@ -11,7 +11,7 @@ inclusion: always
 
 ## Current Focus
 
-<!-- What is the team working on right now? Active sprint, milestone, or feature. -->
+Step 3 complete — 16 skills synced from ai-dev-kit, CC-specific path references patched. Next: Step 4 (translate three core agents to Kiro JSON format).
 
 ---
 
@@ -35,7 +35,7 @@ inclusion: always
 
 ## Next Up
 
-<!-- Immediate next tasks after current work completes. -->
+Step 4 — translate `adversarial-reviewer`, `diff-explorer`, `security-auditor` agents to Kiro JSON format (`agents/*.json`)
 
 ---
 
