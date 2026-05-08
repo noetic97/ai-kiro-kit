@@ -75,8 +75,8 @@ At the end of every step:
 | 1    | Create repo skeleton and README                     | complete | main                  | —   |
 | 2    | Author initial steering files                       | complete | feat/initial-steering | #1  |
 | 3    | Import skills from ai-dev-kit via sync-skills.ts    | complete | feat/sync-skills      | #2  |
-| 4    | Translate three core agents to Kiro JSON format     | complete | feat/core-agents | —   |
-| 5    | Port hooks and wire into agent configs              | pending | —      | —   |
+| 4    | Translate three core agents to Kiro JSON format     | complete | feat/core-agents | #3  |
+| 5    | Port hooks and wire into agent configs              | complete | feat/hooks       | —   |
 | 6    | Write install-global.ts and init.ts                 | pending | —      | —   |
 | 7    | Integrate with native Kiro specs workflow           | pending | —      | —   |
 | 8    | Validate end-to-end on a real work project          | pending | —      | —   |
@@ -152,7 +152,7 @@ Skills are format-identical between Claude Code and Kiro, but we don't want to s
 ### What to do
 
 1. Write `scripts/sync-skills.ts`:
-   - Takes a path to the local ai-dev-kit repo (default: `~/code/ai-dev-kit`)
+   - Takes a path to the local ai-dev-kit repo (default: `/Users/noetic/repos/noetic97/ai-dev-kit`)
    - Reads a manifest file `scripts/skills-manifest.json` listing which skills to import
    - For each listed skill, copies `<ai-dev-kit>/skills/<name>/` to `skills/<name>/`
    - Records the source commit SHA in a `.skill-source` file inside each imported skill directory
@@ -258,7 +258,7 @@ The JSON-in-a-string prompt is ugly compared to markdown. If this becomes painfu
 ## Step 5 — Port hooks and wire into agent configs
 
 **Branch:** `feat/hooks`
-**Status:** `pending`
+**Status:** `complete`
 **Scope:** shell scripts + agent config updates
 
 ### Problem
